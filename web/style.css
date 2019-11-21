@@ -1,0 +1,53 @@
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+header {/*Шапка страницы*/
+    color: green; /*Цвет текстра в шапке*/
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid maroon;
+}
+
+form button {
+    color: blue;
+    background-color: pink;
+}
+
+footer::first-letter {
+    font: bold italic 3em / .5 serif;
+    color: green;
+}
+
+
+label, form {
+    padding: 1%;
+}
+
+label, form, input {
+    margin: 1%;
+}
+
+input {
+    padding: 0.5%;
+}
+/*Свойства canvas элементов*/
+canvas {/*Canvas элемент: */
+
+    position: absolute;
+    z-index: auto; /*Порядок слоя зависит от расположения в коде, чем позже появился, тем выше располагается: */
+}
+canvas:hover{ /*При наведении на canvas элемент: */
+    cursor: crosshair; /*Меняем курсор на перекрестие, для более точного нажатия */
+}
+/*Свойства таблицы*/
+th { /*Заголовок таблицы:*/
+    background-color: mediumvioletred;
+}
+/*todo переделать, т.к. я задаю canvas ручками, а надо автоматически и без div возможно */
+#divForCanvas {
+    width: auto;
+    height: 250px;
+    position: relative;
+}
